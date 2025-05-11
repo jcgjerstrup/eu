@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa-Kommissionen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px 20px 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-height: 90vh;
+        }
+        .faktaboks {
+            background: #e8f0fe;
+            border-left: 6px solid #1a73e8;
+            padding: 18px 24px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+        .faktaboks h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #1a73e8;
+        }
+        .faktaboks ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .billeder-row {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        .billede-link {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            border-radius: 10px;
+            color: white;
+            font-size: 2.2em;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .billede-link:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        }
+        .billede1 {
+            background: url('https://www.altinget.dk/cdn-cgi/image/q=80,fit=crop,w=2560,f=jpeg/https://legacy.altinget.dk/images/article/285254/129747.jpg') center/cover no-repeat;
+        }
+        .billede2 {
+            background: url('https://t1.pixers.pics/img-c676e9e9/fotolaerreder-hand-med-pegefinger-vektor-illustration-i-grafisk-stil.jpg?H4sIAAAAAAAAA42QW26EMAxFtxOkgB3IkwXM7ywBEQhTWh5RwrSjrr5mWvWvUuUP21f2sa7hvuV-CjCE7QgJ1nkclwDTvFCX2xTy_BmY0oZj0ZK6MESq9veQhrRHVqqGl05wjYYr7Yr2o6fFtU9v7OU4Ym4BclPF-UE0SkOGYc1Qo9AgEJSZgqpVb0aJrovLfmx7qbF0-qGwtFXcbhzP-D_XPrl-FF57O6L0tqtrPHG_hCdWouBK1Cf6x6RB5OY0d6R5ZeR2p-mDvcZbAX_c_K6BtuByhcaCEyANGHlK3eXaWCekMbIbguyb0YUgjPUTvVD26HWjBEnoRajoyhfnUgnUigEAAA==') center/cover no-repeat;
+        }
+        .billede-link span {
+            background: rgba(0,0,0,0.45);
+            padding: 18px 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 900px) {
+            .billeder-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .billede-link {
+                height: 180px;
+                font-size: 1.3em;
+            }
+        }
+        .back-button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-top: 40px;
+        }
+        .back-button:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="faktaboks">
+            <h2>Faktaboks</h2>
+            <ul>
+                <li>Ursula von der Leyen er EU-Kommissionsformand.</li>
+                <li>Kommissionen har 27 medlemmer (én fra hvert EU-land).</li>
+                <li>Kommissionen foreslår nye EU-love og fører dem ud i livet.</li>
+                <li>Hovedsæde i Bruxelles.</li>
+            </ul>
+        </div>
+        <div class="billeder-row">
+            <a href="europa-kommissionen-opbygning.html" class="billede-link billede1"><span>Europa-Kommissionen opbygning</span></a>
+            <a href="europa-kommissionen-udvaegelse.html" class="billede-link billede2"><span>Europa-Kommissionen udvælgelse</span></a>
+        </div>
+        <a href="index.html" class="back-button">Tilbage til forsiden</a>
+    </div>
+</body>
+</html> 

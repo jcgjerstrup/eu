@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa-Parlamentet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px 20px 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-height: 90vh;
+        }
+        .faktaboks {
+            background: #e8f0fe;
+            border-left: 6px solid #1a73e8;
+            padding: 18px 24px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+        .faktaboks h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #1a73e8;
+        }
+        .faktaboks ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .billeder-row {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        .billede-link {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            border-radius: 10px;
+            color: white;
+            font-size: 2.2em;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .billede-link:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        }
+        .billede1 {
+            background: url('https://www.altinget.dk/cdn-cgi/image/q=80,fit=crop,w=2560,f=jpeg/https://legacy.altinget.dk/images/article/125956/6529.jpg') center/cover no-repeat;
+        }
+        .billede2 {
+            background: url('https://herlev.dk/Media/638494729727305862/COLOURBOX37489726.jpg?crop=0%2C0%2C4808%2C2705&width=768') center/cover no-repeat;
+        }
+        .billede-link span {
+            background: rgba(0,0,0,0.45);
+            padding: 18px 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 900px) {
+            .billeder-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .billede-link {
+                height: 180px;
+                font-size: 1.3em;
+            }
+        }
+        .back-button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 40px;
+        }
+        .back-button:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="faktaboks">
+            <h2>Faktaboks</h2>
+            <ul>
+                <li>Europa-Parlamentet har 705 mandater.</li>
+                <li>Parlamentet skifter mellem Bruxelles, Luxembourg og Strasbourg.</li>
+                <li>Parlamentet vedtager love fra EU-Kommissionen.</li>
+            </ul>
+        </div>
+        <div class="billeder-row">
+            <a href="europa-parlamentet-system.html" class="billede-link billede1"><span>Europa-Parlamentet system</span></a>
+            <a href="europa-parlamentet-valg.html" class="billede-link billede2"><span>Europa-Parlamentet valg</span></a>
+        </div>
+        <div style="display: flex; justify-content: center; margin: 40px 0 0 0;">
+            <img src="https://www.europarl.europa.eu/resources/library/images/20240618PHT22117/20240618PHT22117-cl.png" alt="Europa-Parlamentet" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        </div>
+        <a href="index.html" class="back-button">Tilbage til forsiden</a>
+    </div>
+</body>
+</html> 
