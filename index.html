@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EU Institutioner.</title>
+    <title>EU Institutioner</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,11 +36,9 @@
             border: none;
             padding: 15px 20px;
             border-radius: 4px;
-            cursor: pointer;
             font-size: 16px;
             text-align: center;
             text-decoration: none;
-            display: block;
         }
         .eu-button:hover {
             background-color: #1557b0;
@@ -54,7 +52,18 @@
             <a href="europa-parlamentet.html" class="eu-button">Europa-Parlamentet</a>
             <a href="europa-kommissionen.html" class="eu-button">Europa-Kommissionen</a>
             <a href="eu-domstol.html" class="eu-button">Den Europæiske Unions Domstol</a>
+            <a href="ministerraadet.html" class="eu-button">Ministerrådet</a> <!-- ✅ NY KNAP -->
         </div>
     </div>
+
+    <script>
+        // Gør cursor til hånd når man holder over knapper
+        const buttons = document.querySelectorAll('.eu-button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.cursor = 'pointer';
+            });
+        });
+    </script>
 </body>
-</html> 
+</html>
